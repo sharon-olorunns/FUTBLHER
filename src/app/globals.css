@@ -1,0 +1,24 @@
+/* This file contains our global styles that apply to the whole website */
+
+/* These lines import Tailwind's styles */
+/* Tailwind is like a collection of pre-made styles we can use */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* These are CSS variables - they're like containers that hold values we can use later */
+/* We're setting up our main text and background colors */
+:root {
+  /* Black text (0,0,0 in RGB colors) */
+  --foreground-rgb: 0, 0, 0;
+  /* White background (255,255,255 in RGB colors) */
+  --background-rgb: 255, 255, 255;
+}
+
+/* These styles apply to the whole page */
+body {
+  /* Use the text color we defined above */
+  color: rgb(var(--foreground-rgb));
+  /* Use the background color we defined above */
+  background: rgb(var(--background-rgb));
+}
